@@ -1,0 +1,29 @@
+[33mcommit 914627c87ce68cb89b6464fc928f21c94453ed9e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Nikita Kalinin <jaimis26@gmail.com>
+Date:   Sun Mar 8 17:34:56 2026 +0300
+
+    исправление отступов 1
+
+[33mcommit e2c4e69234d4735bdb25e1c819bfcd874bc6d62c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Nikita Kalinin <jaimis26@gmail.com>
+Date:   Sat Mar 7 22:13:22 2026 +0300
+
+    восстановил удаленный файл тесты
+
+[33mcommit d3baf0cbb31c5cd08c3dacaf5a9de3e06381a9f8[m
+Author: Nikita Kalinin <jaimis26@gmail.com>
+Date:   Sat Mar 7 21:58:19 2026 +0300
+
+    README
+
+[33mcommit c97723368d077780da34734805614acad36ea7af[m
+Author: Nikita Kalinin <jaimis26@gmail.com>
+Date:   Sat Mar 7 21:38:46 2026 +0300
+
+    готовое
+
+[33mcommit d529904e6e1a70a292504135cb7c07ee306bebbe[m
+Author: jaimis26 <jaimis26@gmail.com>
+Date:   Sun Mar 1 21:02:50 2026 +0300
+
+    Initial commit
