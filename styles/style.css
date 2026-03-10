@@ -29,7 +29,7 @@
   list-style: none;
 }
 
-.address {
+.address_header {
   display: flex;
   flex-direction: column-reverse;
   justify-self: end;
@@ -42,22 +42,25 @@
   line-height: 1.3;
 }
 
-.number {
-  text-underline-offset: 4px;
-}
-
-.email {
+.header-link_email_number {
   text-underline-offset: 4px;
 }
 
 .overlay {
+  position: absolute;
   inset: 0;
-  height: 757px;
-  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.6);
 }
 
 .cover {
+  display: flex;
+  flex-direction: column;
+  min-height: 757px;
   position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .cover_image {
@@ -68,11 +71,10 @@
 }
 
 .cover_title {
-  position: absolute;
-  inset: 1;
+  position: relative;
   z-index: 2;
   width: 100%;
-  padding: 165px 20px 207px 50px;
+  padding: 165px 50px 50px 50px;
   color: rgb(255, 255, 255);
   font-size: 100px;
   line-height: 135px;
@@ -91,19 +93,22 @@
 
 .aligned-text_right {
   display: block;
-  text-align: end;
+  text-align: right;
+  padding-left: 610px;
 }
 
 .cover_description {
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
+  flex-direction: row;
   align-items: baseline;
+  z-index: 2;
 }
 
 .description-text {
   margin-right: 100px;
-  padding-bottom: 61px;
+  padding-bottom: 50px;
   padding-left: 50px;
   color: rgb(255, 255, 255);
   font-weight: 400;
@@ -116,12 +121,13 @@
 .button {
   margin-bottom: 32px;
   border-color: rgb(255, 255, 255);
-  padding: 12px 32px;
+  padding: 12px 32px 11px 31px;
   color: rgb(255, 255, 255);
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  margin-top: 50px;
 }
 
 .lots {
@@ -148,16 +154,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
   padding: 30px;
   color: rgb(255, 255, 255);
 }
 
-a {
+.card_link{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
+  text-decoration: none;
 }
 
 .card_type_film {
@@ -166,6 +176,9 @@ a {
   left: 0;
   z-index: -1;
   height: 100%;
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_book {
@@ -174,6 +187,9 @@ a {
   left: 0;
   z-index: -1;
   height: 100%;
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card_type_picture {
@@ -182,23 +198,32 @@ a {
   left: 0;
   z-index: -1;
   height: 100%;
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+
 }
 
 .card_title {
-  margin-top: 20px;
-  margin-left: 23px;
+  margin-top: 48px;
+  margin-left: 40px;
   font-weight: 700;
   font-size: 22px;
   font-style: normal;
   line-height: 120%;
   text-transform: uppercase;
+  text-decoration: underline;
+  z-index: 2;
 }
 
 article {
-  margin-bottom: 20px;
-  margin-left: 23px;
+  margin-bottom: 48px;
+  margin-left: 40px;
+  margin-right: 40px;
   font-size: 20px;
   line-height: 120%;
+  text-decoration: none;
+  z-index: 2;
 }
 
 .overlay_card {
@@ -219,14 +244,19 @@ article {
 
 .about {
   display: grid;
-  grid-template-columns: 334px auto;
-  grid-template-rows: 596px auto;
-  justify-items: end;
-  padding-top: 65px;
+  grid-template-columns: 334px 1fr;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 120px;
 }
 
 .about_column {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: end;
   margin-right: 35px;
+  margin-top: 35px;
 }
 
 .about_logo {
@@ -246,9 +276,15 @@ article {
 }
 
 .about_title {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-top: 136px;
   font-size: 40px;
   text-transform: uppercase;
   padding-left: 50px;
+  padding-bottom: 100px;
+
 }
 
 p {
@@ -260,20 +296,20 @@ p {
 .about_title_text {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 .about_text {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-right: 24px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding-top: 120px;
+  padding-top: 180px;
 }
 
 .address_footer {
