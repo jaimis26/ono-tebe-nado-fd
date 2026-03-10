@@ -162,7 +162,7 @@
   color: rgb(255, 255, 255);
 }
 
-.card_link{
+.card_link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -247,7 +247,7 @@ article {
   grid-template-columns: 334px 1fr;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 120px;
+  padding-top: 65px;
 }
 
 .about_column {
@@ -309,7 +309,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding-top: 180px;
+  padding-top: 120px;
 }
 
 .address_footer {
@@ -342,7 +342,6 @@ p {
 
 .footer__social-link {
   display: flex;
-  gap: 48px;
   text-decoration: none;
 }
 
@@ -350,4 +349,5 @@ p {
   display: flex;
   justify-content: center;
   padding-left: 15px;
+  gap: 48px;
 }
